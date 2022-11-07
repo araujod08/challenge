@@ -1,6 +1,6 @@
 import React from 'react';
 import Post from './components/Post/Post';
-import {  Inputs, MainContainer } from './style';
+import { Inputs, MainContainer } from './style';
 import { Header } from './components/Header/Header'
 class App extends React.Component {
   state = {
@@ -13,7 +13,6 @@ class App extends React.Component {
           Lorem ipsum dui maecenas quisque sagittis, nisi velit pretium mi habitant, magna vulputate quisque magna.
         </p>
       },
-
       {
         nomeUsuario: "Jorginho",
         fotoUsuario: "https://picsum.photos/50/60",
@@ -80,27 +79,27 @@ class App extends React.Component {
           <input
             value={this.state.inputUsuario}
             onChange={this.onChangeInputUsuario}
-            placeholder={"Nome Usuário"} 
+            placeholder={"Nome Usuário"}
             class="input" />
-        <input
-          value={this.state.inputFotoUsuario}
-          onChange={this.onChangeinputFotoUsuario}
-          placeholder={"foto usuário"} 
-          class="input"
+          <input
+            value={this.state.inputFotoUsuario}
+            onChange={this.onChangeinputFotoUsuario}
+            placeholder={"foto usuário"}
+            class="input"
           />
-        <input
-          value={this.state.inputFotoPost}
-          onChange={this.onChangeInputFotoPost}
-          placeholder={"Foto post"}
-          class="input"
+          <input
+            value={this.state.inputFotoPost}
+            onChange={this.onChangeInputFotoPost}
+            placeholder={"Foto post"}
+            class="input"
           />
-        <input
-          value={this.state.inputLegenda}
-          onChange={this.onChangeLegenda}
-          placeholder={"mensagem"}
-          class="input"
+          <input
+            value={this.state.inputLegenda}
+            onChange={this.onChangeLegenda}
+            placeholder={"mensagem"}
+            class="input"
           />
-          </Inputs>
+        </Inputs>
         <button onClick={this.adicionaPost}>Publicar</button>
         {arrayDeComponentes}
       </MainContainer>
